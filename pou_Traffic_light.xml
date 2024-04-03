@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="Traffic_light" kind="program" period="1" phase="0" lge="SFC">
+         <vargroup name="Traffic_light" kind="LOCAL">
+         </vargroup>
+<defines name="Traffic_light"></defines>
+         <sourceSFC sx="2" sy="7">
+            <SFCstep kind="init" dx="0" dy="0" ref="1" name="GS1" next="GT1, GT101">
+            </SFCstep>
+            <SFClines dx="0" dy="1" vtop="1" vbottom="1" hleft="1" hright="1" dbline="0" cross="1"/>
+            <SFClines dx="1" dy="1" vtop="0" vbottom="1" hleft="1" hright="0" dbline="0" cross="1"/>
+            <SFCtrans dx="0" dy="2" ref="1" name="GT1" next="GS2">
+               <SFCcondition>
+                  <sourceSTIL>IsItDay
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFCtrans dx="1" dy="2" ref="101" name="GT101" next="GS101">
+               <SFCcondition>
+                  <sourceSTIL>NOT(IsItDay)
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFCstep kind="default" dx="0" dy="3" ref="2" name="GS2" next="GT2">
+               <SFCnote ref="2" dx="0" dy="3">Day Mode
+               </SFCnote>
+               <SFCaction kind="default">
+                  <sourceSTIL>Day_Mode (N);
+                  </sourceSTIL>
+               </SFCaction>
+            </SFCstep>
+            <SFCstep kind="default" dx="1" dy="3" ref="101" name="GS101" next="GT102">
+               <SFCnote ref="101" dx="1" dy="3">Night Mode
+               </SFCnote>
+               <SFCaction kind="default">
+                  <sourceSTIL>Night_Mode (N);
+                  </sourceSTIL>
+               </SFCaction>
+            </SFCstep>
+            <SFCtrans dx="0" dy="4" ref="2" name="GT2" next="GS1">
+               <SFCcondition>
+                  <sourceSTIL>NOT (IsItDay)
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFCtrans dx="1" dy="4" ref="102" name="GT102" next="GS1">
+               <SFCcondition>
+                  <sourceSTIL>IsItDay
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFClines dx="0" dy="5" vtop="1" vbottom="1" hleft="1" hright="1" dbline="0" cross="1"/>
+            <SFClines dx="1" dy="5" vtop="1" vbottom="0" hleft="1" hright="0" dbline="0" cross="1"/>
+            <SFCjump dx="0" dy="6" ref="1" target="GS1"/>
+         </sourceSFC>
+      </pou>
+   </programs>
+</K5project>

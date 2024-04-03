@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <variables>
+      <vargroup name="(Global)" kind="GLOBAL">
+         <var name="bRed" type="BOOL">
+         <varinfo type="subgroup" data="color_Var"/>
+         </var>
+         <var name="bYellow" type="BOOL">
+         <varinfo type="subgroup" data="color_Var"/>
+         </var>
+         <var name="bGreen" type="BOOL">
+         <varinfo type="subgroup" data="color_Var"/>
+         </var>
+         <var name="IsItDay" type="BOOL"/>
+         <var name="READ_Var" type="BOOL"/>
+         <var name="SENT_Var" type="BOOL"/>
+         <var name="bTest" type="BOOL"/>
+         <var name="ErrReport" type="DINT"/>
+         <var name="Display_Signal" type="BOOL" dim="7"/>
+         <var name="MyTime" type="TIME" init="T#100ms"/>
+         <var name="test" type="BOOL" dim="5"/>
+         <var name="V1" type="BOOL"/>
+         <var name="jaune" type="BOOL"/>
+      </vargroup>
+      <vargroup name="(Retain)" kind="RETAIN">
+      </vargroup>
+   </variables>
+</K5project>

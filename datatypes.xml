@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <types>
+      <type name="NewUnion" kind="UNION" desc="">
+         <var name="NewVar" type="BOOL"/>
+         <var name="NewVar1" type="DINT"/>
+      </type>
+      <type name="strInput" kind="STRUCT" desc="">
+         <var name="Value" type="INT"/>
+         <var name="Quality" type="BOOL"/>
+         <var name="Stamp" type="TIME"/>
+      </type>
+      <type name="Test_BF" kind="BITFIELD" base="WORD" bits="OK,NOK,,,,,,WAITING,,,FINISHED">
+      </type>
+      <type name="TypReport" kind="ENUM">
+      <enumval value="OK"/>
+      <enumval value="FAIL"/>
+      <enumval value="BUSY"/>
+      </type>
+      <type name="TypSum" kind="STRUCT" desc="">
+         <var name="bEnable" type="BOOL"/>
+         <var name="di1" type="DINT"/>
+         <var name="di2" type="DINT"/>
+         <var name="sum" type="LINT"/>
+      </type>
+   </types>
+</K5project>

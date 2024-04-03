@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<Appli>
+   <Folder Name="Exception programs">
+      <Program Name="pOnBadIndex"/>
+      <Program Name="pOnDivZero"/>
+      <Program Name="pShutDown"/>
+      <Program Name="pStartup"/>
+   </Folder>
+   <Folder Name="Programs">
+      <Folder Name="EX1">
+         <Program Name="EX1_MP3"/>
+      </Folder>
+      <Folder Name="EX10">
+         <Program Name="EX10_Array_Struct"/>
+      </Folder>
+      <Folder Name="EX11">
+         <Program Name="MP3_UDFB_for_Recipe"/>
+         <Program Name="MyRecipe_Array"/>
+         <File Name="MyRecipe_Array.rcp"/>
+      </Folder>
+      <Folder Name="EX12">
+         <File Name="EX12_TestSeq.seq"/>
+      </Folder>
+      <Folder Name="EX2">
+         <Program Name="EX2_ST_MP3"/>
+      </Folder>
+      <Folder Name="EX3">
+         <Program Name="autoMaintien"/>
+         <Program Name="EX3_LD"/>
+      </Folder>
+      <Folder Name="EX4">
+         <File Name="EX4_Light.gra"/>
+         <File Name="EX4_MP3.gra"/>
+      </Folder>
+      <Folder Name="EX5">
+         <Program Name="EX5_SFC"/>
+      </Folder>
+      <Folder Name="EX6">
+         <Program Name="EX6_SFC"/>
+      </Folder>
+      <Folder Name="EX7">
+         <Program Name="EX7_SFC"/>
+      </Folder>
+      <Folder Name="EX8">
+         <Program Name="Traffic_light">
+            <Program Name="Day_Mode"/>
+            <Program Name="Night_Mode"/>
+         </Program>
+      </Folder>
+      <Folder Name="EX9">
+         <Program Name="Main_SP_UDFB"/>
+         <Program Name="MySubProg"/>
+         <Program Name="MyUDFB"/>
+      </Folder>
+      <Folder Name="Others">
+         <Program Name="MP3_GRAPH"/>
+      </Folder>
+   </Folder>
+   <Folder Name="Watch (for debugging)">
+      <File Name="Soft Scope.SS5"/>
+   </Folder>
+   <File Name="Initial values.RCP"/>
+   <FieldBus/>
+   <Binding/>
+   <GlobalDef/>
+   <Vars/>
+   <Types/>
+</Appli>

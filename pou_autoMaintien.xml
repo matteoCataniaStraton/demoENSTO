@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="autoMaintien" kind="program" period="1" phase="0" lge="LD">
+         <vargroup name="autoMaintien" kind="LOCAL">
+            <var name="Bp" type="BOOL"/>
+            <var name="Light" type="BOOL"/>
+            <var name="Breaker" type="BOOL"/>
+         </vargroup>
+<defines name="autoMaintien"></defines>
+         <sourceLD>
+         </sourceLD>
+      </pou>
+   </programs>
+</K5project>

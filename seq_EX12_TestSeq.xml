@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <spylists>
+      <sequence name="EX12_TestSeq" ext=".seq">// Test fonctionnement front montant pour &quot;UP&quot;
+EX1_MP3/UP := TRUE;
+wait [T#400ms] EX1_MP3/UP = TRUE;
+wait [T#400ms] EX1_MP3/VOLUME = 1;
+EX1_MP3/VOLUME = 1;
+EX1_MP3/UP := FALSE;
+// Test fonctionnement front montant pour &quot;DOWN&quot;
+EX1_MP3/DOWN := TRUE;
+wait [T#400ms] EX1_MP3/DOWN = TRUE;
+wait [T#400ms] EX1_MP3/VOLUME = 0;
+EX1_MP3/DOWN := FALSE;
+// Test fonctionnement maintient &quot;UP&quot; + &quot;MAXIMUM&quot;
+EX1_MP3/UP := TRUE;
+wait [T#400ms] EX1_MP3/UP = TRUE;
+wait [T#10550ms] EX1_MP3/VOLUME = 10;
+EX1_MP3/UP := FALSE;
+// Test fonctionnement &quot;MUTE&quot;
+EX1_MP3/MUTE := TRUE;
+wait [T#400ms] EX1_MP3/MUTE = TRUE;
+wait [T#400ms] EX1_MP3/VOLUME = 0;
+EX1_MP3/MUTE := FALSE;
+// Test fonctionnement &quot;UNMUTE&quot;
+EX1_MP3/MUTE := TRUE;
+wait [T#400ms] EX1_MP3/MUTE = TRUE;
+wait [T#400ms] EX1_MP3/VOLUME = 10;
+EX1_MP3/MUTE := FALSE;
+// Test fonctionnement maintient &quot;DOWN&quot;
+EX1_MP3/DOWN := TRUE;
+wait [T#400ms] EX1_MP3/DOWN = TRUE;
+wait [T#10550ms] EX1_MP3/VOLUME = 0;
+EX1_MP3/DOWN := FALSE;
+      </sequence>
+   </spylists>
+</K5project>

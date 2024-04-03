@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <graphics>
+      <graphic name="EX4_MP3" backcolor="16777215">
+         <graitem dx="16" dy="96" sx="96" sy="32" kind="X5BUTTON">
+            <graprop name="SETUSERID" value="Push button"/>
+            <graprop name="SETSKIN" value="DEFAULT"/>
+            <graprop name="ADDSYMBOL" value="EX1_MP3/UP"/>
+            <graprop name="SETSYMBOLSPYDELAY" value="0"/>
+            <graprop name="SETBORDERSIZE" value="2"/>
+            <graprop name="SETBORDERCOLOR" value="8421504"/>
+            <graprop name="SETBORDERMODE" value="3DUP"/>
+            <graprop name="SETDATAFORMAT" value=""/>
+            <graprop name="SETDATACOLOR" value="8421504"/>
+            <graprop name="SETBKCOLOR" value="12632256"/>
+            <graprop name="SETBKMODE" value="OPAQUE"/>
+            <graprop name="SETTEXT" value="UP"/>
+            <graprop name="SETTEXTCOLOR" value="0"/>
+            <graprop name="SETTEXTMODE" value="BOLD"/>
+            <graprop name="SETFONTNAME" value="ARIAL"/>
+            <graprop name="SETFONTSIZE" value="30"/>
+            <graprop name="SETCTLTYPE" value="PUSHBUTTON"/>
+            <graprop name="SETONBITMAP" value=""/>
+            <graprop name="SETOFFBITMAP" value=""/>
+            <graprop name="SETBITMAPMODE" value="ORIGINAL"/>
+         </graitem>
+         <graitem dx="16" dy="16" sx="96" sy="64" kind="X5DIGITALMETER">
+            <graprop name="SETUSERID" value="Digits"/>
+            <graprop name="SETSKIN" value="DEFAULT"/>
+            <graprop name="ADDSYMBOL" value="EX1_MP3/VOLUME"/>
+            <graprop name="SETSYMBOLSPYDELAY" value="0"/>
+            <graprop name="SETBORDERSIZE" value="3"/>
+            <graprop name="SETBORDERCOLOR" value="0"/>
+            <graprop name="SETBORDERMODE" value="FLAT"/>
+            <graprop name="SETDATAFORMAT" value="%d"/>
+            <graprop name="SETDATACOLOR" value="5635925"/>
+            <graprop name="SETBKCOLOR" value="0"/>
+            <graprop name="SETBKMODE" value="OPAQUE"/>
+            <graprop name="SETTEXT" value="VOLUME"/>
+            <graprop name="SETTEXTCOLOR" value="16777215"/>
+            <graprop name="SETTEXTMODE" value="NORMAL"/>
+            <graprop name="SETFONTNAME" value="Courier New"/>
+            <graprop name="SETFONTSIZE" value="13"/>
+            <graprop name="SETRANGEMIN" value="0.000000"/>
+            <graprop name="SETRANGEMAX" value="1000"/>
+            <graprop name="SETGAIN" value="1.000000"/>
+            <graprop name="SETOFFSET" value="0.000000"/>
+         </graitem>
+         <graitem dx="16" dy="144" sx="96" sy="32" kind="X5BUTTON">
+            <graprop name="SETUSERID" value="Push button"/>
+            <graprop name="SETSKIN" value="DEFAULT"/>
+            <graprop name="ADDSYMBOL" value="EX1_MP3/MUTE"/>
+            <graprop name="SETSYMBOLSPYDELAY" value="0"/>
+            <graprop name="SETBORDERSIZE" value="2"/>
+            <graprop name="SETBORDERCOLOR" value="8421504"/>
+            <graprop name="SETBORDERMODE" value="3DUP"/>
+            <graprop name="SETDATAFORMAT" value=""/>
+            <graprop name="SETDATACOLOR" value="8421504"/>
+            <graprop name="SETBKCOLOR" value="12632256"/>
+            <graprop name="SETBKMODE" value="OPAQUE"/>
+            <graprop name="SETTEXT" value="MUTE"/>
+            <graprop name="SETTEXTCOLOR" value="0"/>
+            <graprop name="SETTEXTMODE" value="BOLD"/>
+            <graprop name="SETFONTNAME" value="ARIAL"/>
+            <graprop name="SETFONTSIZE" value="30"/>
+            <graprop name="SETCTLTYPE" value="PUSHBUTTON"/>
+            <graprop name="SETONBITMAP" value=""/>
+            <graprop name="SETOFFBITMAP" value=""/>
+            <graprop name="SETBITMAPMODE" value="ORIGINAL"/>
+         </graitem>
+         <graitem dx="16" dy="192" sx="96" sy="32" kind="X5BUTTON">
+            <graprop name="SETUSERID" value="Push button"/>
+            <graprop name="SETSKIN" value="DEFAULT"/>
+            <graprop name="ADDSYMBOL" value="EX1_MP3/DOWN"/>
+            <graprop name="SETSYMBOLSPYDELAY" value="0"/>
+            <graprop name="SETBORDERSIZE" value="2"/>
+            <graprop name="SETBORDERCOLOR" value="8421504"/>
+            <graprop name="SETBORDERMODE" value="3DUP"/>
+            <graprop name="SETDATAFORMAT" value=""/>
+            <graprop name="SETDATACOLOR" value="8421504"/>
+            <graprop name="SETBKCOLOR" value="12632256"/>
+            <graprop name="SETBKMODE" value="OPAQUE"/>
+            <graprop name="SETTEXT" value="DOWN"/>
+            <graprop name="SETTEXTCOLOR" value="0"/>
+            <graprop name="SETTEXTMODE" value="BOLD"/>
+            <graprop name="SETFONTNAME" value="ARIAL"/>
+            <graprop name="SETFONTSIZE" value="30"/>
+            <graprop name="SETCTLTYPE" value="PUSHBUTTON"/>
+            <graprop name="SETONBITMAP" value=""/>
+            <graprop name="SETOFFBITMAP" value=""/>
+            <graprop name="SETBITMAPMODE" value="ORIGINAL"/>
+         </graitem>
+         <gragdi name="BACKCOLOR" value="16777215"/>
+         <gragdi name="USEMARGIN" value="1"/>
+         <gragdi name="MARGWIDTH" value="16"/>
+         <gragdi name="MARGHEIGHT" value="16"/>
+         <gragdi name="SNAPGRID" value="1"/>
+         <gragdi name="MAXWIDTH" value="-1"/>
+         <gragdi name="MAXHEIGHT" value="-1"/>
+      </graphic>
+   </graphics>
+</K5project>

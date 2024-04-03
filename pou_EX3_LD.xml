@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="EX3_LD" kind="program" period="1" phase="0" lge="LD">
+         <vargroup name="EX3_LD" kind="LOCAL">
+            <var name="Button" type="BOOL"/>
+            <var name="light" type="BOOL"/>
+            <var name="Breaker" type="BOOL"/>
+         </vargroup>
+<defines name="EX3_LD"></defines>
+         <sourceLD>
+            <LDrung dx="0" dy="0" sx="5" sy="2" label="">
+               <LDcontact kind="P" symbol="Button" dx="1" dy="0"/>
+               <LDcontact kind="I" symbol="light" dx="2" dy="0"/>
+               <LDcontact kind="I" symbol="Breaker" dx="3" dy="0"/>
+               <LDdiv dx="0" dy="0" sx="1" sy="2">
+                  <LDbranch dx="4" dy="0" sx="1" sy="1">
+                     <LDcoil kind="S" symbol="light" dx="4" dy="0"/>
+                  </LDbranch>
+                  <LDbranch dx="4" dy="1" sx="1" sy="1">
+                     <LDcoil kind="R" symbol="Button" dx="4" dy="1"/>
+                  </LDbranch>
+               </LDdiv>
+            </LDrung>
+            <LDrung dx="0" dy="2" sx="4" sy="2" label="">
+               <LDdiv dx="0" dy="2" sx="1" sy="2">
+                  <LDbranch dx="1" dy="2" sx="1" sy="1">
+                     <LDcontact kind="P" symbol="Button" dx="1" dy="2"/>
+                  </LDbranch>
+                  <LDbranch dx="1" dy="3" sx="1" sy="1">
+                     <LDcontact kind="D" symbol="Breaker" dx="1" dy="3"/>
+                  </LDbranch>
+               </LDdiv>
+               <LDcontact kind="D" symbol="light" dx="2" dy="2"/>
+               <LDdiv dx="0" dy="2" sx="1" sy="2">
+                  <LDbranch dx="3" dy="2" sx="1" sy="1">
+                     <LDcoil kind="R" symbol="light" dx="3" dy="2"/>
+                  </LDbranch>
+                  <LDbranch dx="3" dy="3" sx="1" sy="1">
+                     <LDcoil kind="R" symbol="Button" dx="3" dy="3"/>
+                  </LDbranch>
+               </LDdiv>
+            </LDrung>
+         </sourceLD>
+      </pou>
+   </programs>
+</K5project>

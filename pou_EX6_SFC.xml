@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="EX6_SFC" kind="program" period="1" phase="0" lge="SFC">
+         <vargroup name="EX6_SFC" kind="LOCAL">
+            <var name="A" type="BOOL"/>
+            <var name="B" type="BOOL"/>
+         </vargroup>
+<defines name="EX6_SFC"></defines>
+         <sourceSFC sx="2" sy="9">
+            <SFCstep kind="init" dx="0" dy="0" ref="1" name="GS1" next="GT1, GT101">
+            </SFCstep>
+            <SFClines dx="0" dy="1" vtop="1" vbottom="1" hleft="1" hright="1" dbline="0" cross="1"/>
+            <SFClines dx="1" dy="1" vtop="0" vbottom="1" hleft="1" hright="0" dbline="0" cross="1"/>
+            <SFCtrans dx="0" dy="2" ref="1" name="GT1" next="GS2">
+               <SFCcondition>
+                  <sourceSTIL>A
+
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFCtrans dx="1" dy="2" ref="101" name="GT101" next="GS101">
+               <SFCcondition>
+                  <sourceSTIL>B
+
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFCstep kind="default" dx="0" dy="3" ref="2" name="GS2" next="GT2">
+            </SFCstep>
+            <SFCstep kind="default" dx="1" dy="3" ref="101" name="GS101" next="GT102">
+            </SFCstep>
+            <SFCtrans dx="0" dy="4" ref="2" name="GT2" next="GS3">
+               <SFCcondition>
+                  <sourceSTIL>GS2.T &gt; t#1s
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFCtrans dx="1" dy="4" ref="102" name="GT102" next="GS102">
+               <SFCcondition>
+                  <sourceSTIL>GS101.T &gt; t#1s
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFCstep kind="default" dx="0" dy="5" ref="3" name="GS3" next="GT3">
+            </SFCstep>
+            <SFCstep kind="default" dx="1" dy="5" ref="102" name="GS102" next="GT103">
+            </SFCstep>
+            <SFCtrans dx="0" dy="6" ref="3" name="GT3" next="GS1">
+               <SFCcondition>
+                  <sourceSTIL>NOT(A)
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFCtrans dx="1" dy="6" ref="103" name="GT103" next="GS1">
+               <SFCcondition>
+                  <sourceSTIL>GS102.T &gt; t#1s
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFClines dx="0" dy="7" vtop="1" vbottom="1" hleft="1" hright="1" dbline="0" cross="1"/>
+            <SFClines dx="1" dy="7" vtop="1" vbottom="0" hleft="1" hright="0" dbline="0" cross="1"/>
+            <SFCjump dx="0" dy="8" ref="1" target="GS1"/>
+         </sourceSFC>
+      </pou>
+   </programs>
+</K5project>

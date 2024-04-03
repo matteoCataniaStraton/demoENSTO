@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="MyUDFB" kind="UDFB" lge="FBD">
+         <vargroup name="MyUDFB" kind="LOCAL">
+            <var name="IN" type="BOOL" attr="IN"/>
+            <var name="OUT" type="DINT" attr="OUT"/>
+            <var name="Inst_CTU" type="CTU"/>
+            <var name="Inst_F_TRIG" type="F_TRIG"/>
+            <var name="Inst_R_TRIG" type="R_TRIG"/>
+            <var name="Full" type="BOOL"/>
+            <var name="reset" type="BOOL"/>
+         </vargroup>
+<defines name="MyUDFB"></defines>
+         <sourceFBD sxcell="16" sycell="16">
+            <FBDbox id="10" order="0" dx="11" dy="1" sx="4" sy="3" nbi="1" nbo="1" style="0" kind="FB" type="R_TRIG" inst="Inst_R_TRIG"/>
+            <FBDvarbox id="9" order="0" dx="2" dy="3" sx="8" sy="1" symbol="IN" style="0"/>
+            <FBDbox id="5" order="0" dx="33" dy="3" sx="4" sy="5" nbi="3" nbo="2" style="0" kind="FB" type="CTU" inst="Inst_CTU"/>
+            <FBDbox id="6" order="0" dx="18" dy="4" sx="4" sy="3" nbi="2" nbo="1" style="0" kind="OP" type="OR"/>
+            <FBDvarbox id="2" order="0" dx="38" dy="5" sx="8" sy="1" symbol="Full" style="0"/>
+            <FBDbox id="8" order="0" dx="11" dy="6" sx="4" sy="3" nbi="1" nbo="1" style="0" kind="FB" type="F_TRIG" inst="Inst_F_TRIG"/>
+            <FBDvarbox id="4" order="0" dx="24" dy="6" sx="8" sy="1" symbol="reset" style="0"/>
+            <FBDvarbox id="1" order="0" dx="38" dy="6" sx="8" sy="1" symbol="OUT" style="0"/>
+            <FBDvarbox id="3" order="0" dx="24" dy="7" sx="8" sy="1" symbol="10000" style="0"/>
+            <FBDline negate="0" idfrom="3" idto="5" pinfrom="0" pinto="2" cutx="50" cuty="50">
+               <FBDlinepoint xcell="32" ycell="7" xincell="0" yincell="8"/>
+               <FBDlinepoint xcell="32" ycell="7" xincell="7" yincell="8"/>
+               <FBDlinepoint xcell="32" ycell="7" xincell="7" yincell="8"/>
+               <FBDlinepoint xcell="33" ycell="7" xincell="1" yincell="8"/>
+            </FBDline>
+            <FBDline negate="0" idfrom="4" idto="5" pinfrom="0" pinto="1" cutx="50" cuty="50">
+               <FBDlinepoint xcell="32" ycell="6" xincell="0" yincell="8"/>
+               <FBDlinepoint xcell="32" ycell="6" xincell="7" yincell="8"/>
+               <FBDlinepoint xcell="32" ycell="6" xincell="7" yincell="8"/>
+               <FBDlinepoint xcell="33" ycell="6" xincell="1" yincell="8"/>
+            </FBDline>
+            <FBDline negate="0" idfrom="5" idto="1" pinfrom="1" pinto="0" cutx="50" cuty="50">
+               <FBDlinepoint xcell="37" ycell="6" xincell="0" yincell="8"/>
+               <FBDlinepoint xcell="37" ycell="6" xincell="7" yincell="8"/>
+               <FBDlinepoint xcell="37" ycell="6" xincell="7" yincell="8"/>
+               <FBDlinepoint xcell="38" ycell="6" xincell="1" yincell="8"/>
+            </FBDline>
+            <FBDline negate="0" idfrom="5" idto="2" pinfrom="0" pinto="0" cutx="50" cuty="50">
+               <FBDlinepoint xcell="37" ycell="5" xincell="0" yincell="8"/>
+               <FBDlinepoint xcell="37" ycell="5" xincell="7" yincell="8"/>
+               <FBDlinepoint xcell="37" ycell="5" xincell="7" yincell="8"/>
+               <FBDlinepoint xcell="38" ycell="5" xincell="1" yincell="8"/>
+            </FBDline>
+            <FBDline negate="0" idfrom="6" idto="5" pinfrom="0" pinto="0" cutx="50" cuty="50">
+               <FBDlinepoint xcell="22" ycell="5" xincell="0" yincell="8"/>
+               <FBDlinepoint xcell="27" ycell="5" xincell="3" yincell="8"/>
+               <FBDlinepoint xcell="27" ycell="5" xincell="3" yincell="8"/>
+               <FBDlinepoint xcell="33" ycell="5" xincell="1" yincell="8"/>
+            </FBDline>
+            <FBDline negate="0" idfrom="8" idto="6" pinfrom="0" pinto="1" cutx="50" cuty="50">
+               <FBDlinepoint xcell="15" ycell="8" xincell="0" yincell="8"/>
+               <FBDlinepoint xcell="16" ycell="8" xincell="8" yincell="8"/>
+               <FBDlinepoint xcell="16" ycell="6" xincell="8" yincell="8"/>
+               <FBDlinepoint xcell="18" ycell="6" xincell="1" yincell="8"/>
+            </FBDline>
+            <FBDline negate="0" idfrom="9" idto="8" pinfrom="0" pinto="0" cutx="50" cuty="50">
+               <FBDlinepoint xcell="10" ycell="3" xincell="0" yincell="8"/>
+               <FBDlinepoint xcell="10" ycell="3" xincell="8" yincell="8"/>
+               <FBDlinepoint xcell="10" ycell="8" xincell="8" yincell="8"/>
+               <FBDlinepoint xcell="11" ycell="8" xincell="1" yincell="8"/>
+            </FBDline>
+            <FBDline negate="0" idfrom="9" idto="10" pinfrom="0" pinto="0" cutx="50" cuty="50">
+               <FBDlinepoint xcell="10" ycell="3" xincell="0" yincell="8"/>
+               <FBDlinepoint xcell="10" ycell="3" xincell="7" yincell="8"/>
+               <FBDlinepoint xcell="10" ycell="3" xincell="7" yincell="8"/>
+               <FBDlinepoint xcell="11" ycell="3" xincell="1" yincell="8"/>
+            </FBDline>
+            <FBDline negate="0" idfrom="10" idto="6" pinfrom="0" pinto="0" cutx="50" cuty="50">
+               <FBDlinepoint xcell="15" ycell="3" xincell="0" yincell="8"/>
+               <FBDlinepoint xcell="16" ycell="3" xincell="8" yincell="8"/>
+               <FBDlinepoint xcell="16" ycell="5" xincell="8" yincell="8"/>
+               <FBDlinepoint xcell="18" ycell="5" xincell="1" yincell="8"/>
+            </FBDline>
+         </sourceFBD>
+      </pou>
+   </programs>
+</K5project>

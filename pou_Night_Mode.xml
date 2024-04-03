@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="Night_Mode" kind="child" parent="Traffic_light" lge="SFC">
+         <vargroup name="Night_Mode" kind="LOCAL">
+         </vargroup>
+<defines name="Night_Mode"></defines>
+         <sourceSFC sx="1" sy="7">
+            <SFCstep kind="init" dx="0" dy="0" ref="1" name="GS1" next="GT1">
+            </SFCstep>
+            <SFCtrans dx="0" dy="1" ref="1" name="GT1" next="GS2">
+               <SFCcondition>
+                  <sourceSTIL>NOT (IsItDay)
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFCstep kind="default" dx="0" dy="2" ref="2" name="GS2" next="GT2">
+               <SFCaction kind="default">
+                  <sourceSTIL>
+                  </sourceSTIL>
+               </SFCaction>
+               <SFCaction kind="P1">
+                  <sourceSTIL>bYellow := TRUE;
+                  </sourceSTIL>
+               </SFCaction>
+               <SFCaction kind="P0">
+                  <sourceSTIL>bYellow := FALSE;
+                  </sourceSTIL>
+               </SFCaction>
+            </SFCstep>
+            <SFCtrans dx="0" dy="3" ref="2" name="GT2" next="GS3">
+               <SFCcondition>
+                  <sourceSTIL>GS2.T &gt; t#1s
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFCstep kind="default" dx="0" dy="4" ref="3" name="GS3" next="GT3">
+            </SFCstep>
+            <SFCtrans dx="0" dy="5" ref="3" name="GT3" next="GS1">
+               <SFCcondition>
+                  <sourceSTIL>GS3.T &gt; t#1s
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFCjump dx="0" dy="6" ref="1" target="GS1"/>
+         </sourceSFC>
+      </pou>
+   </programs>
+</K5project>

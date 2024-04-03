@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <networks>
+      <modbus enable_client_tls="off">
+         <modbusport kind="master" address="192.168.33.122" port="502" sdiags="1" reconnect="1" disabled="0" reqdelay="0" cnxdelay="0" rtu="0" desc="">
+            <modbusreq name="MyIB" mode="Read Input Bits" address="0" nbitem="1" slave="0" call="Periodic(0,0)" timeout="3000" retry="1">
+               <modbusitem ope="Data" offset="0" symbol="bTest" nbword="1" mask="ffff" RangeHi="" RangeLo="" SigHi="" SigLo=""/>
+               <modbusitem ope="Status" offset="0" symbol="ErrReport" nbword="1" mask="ffff" RangeHi="" RangeLo="" SigHi="" SigLo=""/>
+            </modbusreq>
+         </modbusport>
+      </modbus>
+   </networks>
+   <fieldbus>
+   </fieldbus>
+</K5project>

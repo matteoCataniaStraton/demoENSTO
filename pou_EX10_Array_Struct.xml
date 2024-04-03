@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="EX10_Array_Struct" kind="program" period="1" phase="0" lge="ST">
+         <vargroup name="EX10_Array_Struct" kind="LOCAL">
+            <var name="MyArray" type="TypSum" dim="10"/>
+            <var name="i" type="DINT"/>
+            <var name="Inst_FLIPFLOP" type="FlipFlop"/>
+         </vargroup>
+<defines name="EX10_Array_Struct"></defines>
+         <sourceSTIL>FOR i := 0 to 9 DO
+    MyArray[i].di1 := i+i;
+    MyArray[i].di2 := i*i;
+    IF MyArray[i].bEnable = false then
+        MyArray[i].sum := 0;
+    ELSE
+        MyArray[i].sum := ANY_TO_LINT (MyArray[i].di1+MyArray[i].di2);
+    END_IF;
+END_FOR;
+
+         </sourceSTIL>
+      </pou>
+   </programs>
+</K5project>

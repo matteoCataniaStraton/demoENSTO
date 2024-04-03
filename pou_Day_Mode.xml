@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="Day_Mode" kind="child" parent="Traffic_light" lge="SFC">
+         <vargroup name="Day_Mode" kind="LOCAL">
+         </vargroup>
+<defines name="Day_Mode"></defines>
+         <sourceSFC sx="1" sy="9">
+            <SFCstep kind="init" dx="0" dy="0" ref="1" name="GS1" next="GT1">
+            </SFCstep>
+            <SFCtrans dx="0" dy="1" ref="1" name="GT1" next="GS2">
+               <SFCcondition>
+                  <sourceSTIL>IsItDay
+
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFCstep kind="default" dx="0" dy="2" ref="2" name="GS2" next="GT2">
+               <SFCnote ref="2" dx="0" dy="2">Green
+               </SFCnote>
+               <SFCaction kind="default">
+                  <sourceSTIL>
+                  </sourceSTIL>
+               </SFCaction>
+               <SFCaction kind="P1">
+                  <sourceSTIL>bGreen := TRUE;
+                  </sourceSTIL>
+               </SFCaction>
+               <SFCaction kind="P0">
+                  <sourceSTIL>bGreen := FALSE;
+                  </sourceSTIL>
+               </SFCaction>
+            </SFCstep>
+            <SFCtrans dx="0" dy="3" ref="2" name="GT2" next="GS3">
+               <SFCcondition>
+                  <sourceSTIL>GS2.T &gt; t#5s
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFCstep kind="default" dx="0" dy="4" ref="3" name="GS3" next="GT3">
+               <SFCnote ref="3" dx="0" dy="4">Yellow
+               </SFCnote>
+               <SFCaction kind="default">
+                  <sourceSTIL>
+                  </sourceSTIL>
+               </SFCaction>
+               <SFCaction kind="P1">
+                  <sourceSTIL>bYellow := TRUE;
+                  </sourceSTIL>
+               </SFCaction>
+               <SFCaction kind="P0">
+                  <sourceSTIL>bYellow := FALSE;
+                  </sourceSTIL>
+               </SFCaction>
+            </SFCstep>
+            <SFCtrans dx="0" dy="5" ref="3" name="GT3" next="GS4">
+               <SFCcondition>
+                  <sourceSTIL>GS3.T &gt; t#1s
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFCstep kind="default" dx="0" dy="6" ref="4" name="GS4" next="GT4">
+               <SFCnote ref="4" dx="0" dy="6">Red
+               </SFCnote>
+               <SFCaction kind="default">
+                  <sourceSTIL>
+                  </sourceSTIL>
+               </SFCaction>
+               <SFCaction kind="P1">
+                  <sourceSTIL>bRed := TRUE;
+                  </sourceSTIL>
+               </SFCaction>
+               <SFCaction kind="P0">
+                  <sourceSTIL>bRed := FALSE;
+                  </sourceSTIL>
+               </SFCaction>
+            </SFCstep>
+            <SFCtrans dx="0" dy="7" ref="4" name="GT4" next="GS1">
+               <SFCcondition>
+                  <sourceSTIL>GS4.T &gt; t#3s
+                  </sourceSTIL>
+               </SFCcondition>
+            </SFCtrans>
+            <SFCjump dx="0" dy="8" ref="1" target="GS1"/>
+         </sourceSFC>
+      </pou>
+   </programs>
+</K5project>

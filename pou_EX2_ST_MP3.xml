@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="EX2_ST_MP3" kind="program" period="1" phase="0" lge="ST">
+         <vargroup name="EX2_ST_MP3" kind="LOCAL">
+            <var name="Inst_R_TRIG" type="R_TRIG"/>
+            <var name="Inst_PLS" type="PLS"/>
+            <var name="DOWN" type="BOOL"/>
+            <var name="UP" type="BOOL"/>
+            <var name="Inst_PLS1" type="PLS"/>
+            <var name="Inst_CTUD" type="CTUD"/>
+            <var name="Inst_FLIPFLOP" type="FlipFlop"/>
+            <var name="MUTE" type="BOOL"/>
+            <var name="Inst_R_TRIG2" type="R_TRIG"/>
+            <var name="Volume" type="DINT"/>
+         </vargroup>
+<defines name="EX2_ST_MP3"></defines>
+         <sourceSTIL>Inst_R_TRIG( UP );
+Inst_R_TRIG2( DOWN );
+Inst_PLS( UP , t#1s );
+Inst_PLS1( DOWN , t#1s );
+Inst_FLIPFLOP( MUTE , FALSE );
+Inst_CTUD( Inst_R_TRIG.Q or Inst_PLS.Q, Inst_R_TRIG2.Q or Inst_PLS1.Q, FALSE, FALSE, 10 );
+
+Volume := SEL( Inst_FLIPFLOP.Q , Inst_CTUD.CV, 0 );
+
+         </sourceSTIL>
+      </pou>
+   </programs>
+</K5project>

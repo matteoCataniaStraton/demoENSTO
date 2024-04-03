@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <recipes>
+      <recipe name="MyRecipe_Array">
+         <rcpcolumns>
+            <rcpcolumn id="1" name="0"/>
+            <rcpcolumn id="2" name="1"/>
+            <rcpcolumn id="3" name="2"/>
+            <rcpcolumn id="4" name="3"/>
+         </rcpcolumns>
+         <rcplines>
+            <rcpline name="@SIZECOL1=185"/>
+            <rcpline name="@SIZECOL2=100"/>
+            <rcpline name="@SIZECOL3=100"/>
+            <rcpline name="@SIZECOL4=100"/>
+            <rcpline name="@SIZECOL5=100"/>
+            <rcpline name="@SIZECOL6=100"/>
+            <rcpline name="Display_Signal"/>
+         </rcplines>
+         <rcpitem symbol="Display_Signal[0]">
+            <rcpvalue id="1" value="TRUE"/>
+            <rcpvalue id="2" value="FALSE"/>
+            <rcpvalue id="3" value="TRUE"/>
+            <rcpvalue id="4" value="TRUE"/>
+         </rcpitem>
+         <rcpitem symbol="Display_Signal[1]">
+            <rcpvalue id="1" value="TRUE"/>
+            <rcpvalue id="2" value="TRUE"/>
+            <rcpvalue id="3" value="TRUE"/>
+            <rcpvalue id="4" value="TRUE"/>
+         </rcpitem>
+         <rcpitem symbol="Display_Signal[2]">
+            <rcpvalue id="1" value="TRUE"/>
+            <rcpvalue id="2" value="TRUE"/>
+            <rcpvalue id="3" value="FALSE"/>
+            <rcpvalue id="4" value="TRUE"/>
+         </rcpitem>
+         <rcpitem symbol="Display_Signal[3]">
+            <rcpvalue id="1" value="TRUE"/>
+            <rcpvalue id="2" value="FALSE"/>
+            <rcpvalue id="3" value="TRUE"/>
+            <rcpvalue id="4" value="TRUE"/>
+         </rcpitem>
+         <rcpitem symbol="Display_Signal[4]">
+            <rcpvalue id="1" value="TRUE"/>
+            <rcpvalue id="2" value="FALSE"/>
+            <rcpvalue id="3" value="TRUE"/>
+            <rcpvalue id="4" value="FALSE"/>
+         </rcpitem>
+         <rcpitem symbol="Display_Signal[5]">
+            <rcpvalue id="1" value="TRUE"/>
+            <rcpvalue id="2" value="FALSE"/>
+            <rcpvalue id="3" value="FALSE"/>
+            <rcpvalue id="4" value="FALSE"/>
+         </rcpitem>
+         <rcpitem symbol="Display_Signal[6]">
+            <rcpvalue id="1" value="FALSE"/>
+            <rcpvalue id="2" value="FALSE"/>
+            <rcpvalue id="3" value="TRUE"/>
+            <rcpvalue id="4" value="TRUE"/>
+         </rcpitem>
+         <rcplines>
+            <rcpline name="@EXPANDED=Display_Signal"/>
+         </rcplines>
+      </recipe>
+   </recipes>
+</K5project>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <programs>
+      <pou name="MyRecipe_Array" kind="program" period="1" phase="0" lge="FBD">
+         <vargroup name="MyRecipe_Array" kind="LOCAL">
+            <var name="Loaded" type="BOOL"/>
+            <var name="Inst_MP3_UDFB_for_Recipe" type="MP3_UDFB_for_Recipe"/>
+            <var name="Level" type="DINT"/>
+            <var name="UP" type="BOOL"/>
+            <var name="DOWN" type="BOOL"/>
+            <var name="MUTE" type="BOOL"/>
+         </vargroup>
+<defines name="MyRecipe_Array"></defines>
+         <sourceFBD sxcell="16" sycell="16">
+            <FBDbox id="1" order="0" dx="11" dy="1" sx="4" sy="3" nbi="2" nbo="1" style="0" kind="OP" type="APPLYRECIPECOLUMN"/>
+            <FBDvarbox id="2" order="0" dx="2" dy="2" sx="8" sy="1" symbol="&apos;MyRecipe_Array&apos;" style="0"/>
+            <FBDvarbox id="4" order="0" dx="16" dy="2" sx="8" sy="1" symbol="Loaded" style="0"/>
+            <FBDvarbox id="3" order="0" dx="2" dy="3" sx="8" sy="1" symbol="Level" style="0"/>
+            <FBDcomment id="10" order="0" dx="2" dy="5" sx="5" sy="2" style="3">[ACTIVEX]
+CREATEACTIVEX X5BUTTON
+SETUSERID,Push button
+SETSKIN,DEFAULT
+ADDSYMBOL,MyRecipe_Array/UP
+SETSYMBOLSPYDELAY,0
+SETBORDERSIZE,2
+SETBORDERCOLOR,8421504
+SETBORDERMODE,3DUP
+SETDATAFORMAT,
+SETDATACOLOR,8421504
+SETBKCOLOR,12632256
+SETBKMODE,OPAQUE
+SETTEXT,UP
+SETTEXTCOLOR,0
+SETTEXTMODE,BOLD
+SETFONTNAME,ARIAL
+SETFONTSIZE,30
+SETCTLTYPE,PUSHBUTTON
+SETONBITMAP,
+SETOFFBITMAP,
+SETBITMAPMODE,ORIGINAL            </FBDcomment>
+            <FBDbox id="5" order="0" dx="11" dy="5" sx="4" sy="5" nbi="3" nbo="1" style="0" kind="FB" type="MP3_UDFB_for_Recipe" inst="Inst_MP3_UDFB_for_Recipe"/>
+            <FBDcomment id="11" order="0" dx="2" dy="7" sx="5" sy="2" style="3">[ACTIVEX]
+CREATEACTIVEX X5BUTTON
+SETUSERID,Push button
+SETSKIN,DEFAULT
+ADDSYMBOL,MyRecipe_Array/DOWN
+SETSYMBOLSPYDELAY,
+SETBORDERSIZE,2
+SETBORDERCOLOR,8421504
+SETBORDERMODE,3DUP
+SETDATAFORMAT,
+SETDATACOLOR,8421504
+SETBKCOLOR,12632256
+SETBKMODE,OPAQUE
+SETTEXT,DOWN
+SETTEXTCOLOR,0
+SETTEXTMODE,BOLD
+SETFONTNAME,ARIAL
+SETFONTSIZE,30
+SETCTLTYPE,PUSHBUTTON
+SETONBITMAP,
+SETOFFBITMAP,
+SETBITMAPMODE,ORIGINAL            </FBDcomment>
+            <FBDvarbox id="9" order="0" dx="16" dy="7" sx="8" sy="1" symbol="Level" style="0"/>
+            <FBDcomment id="19" order="0" dx="34" dy="7" sx="4" sy="1" style="3">[ACTIVEX]
+CREATEACTIVEX X5SHAPE
+SETUSERID,Round Rectangle
+SETSKIN,ROUNDRECT
+ADDSYMBOL,Display_Signal[0]
+SETSYMBOLSPYDELAY,
+SETBORDERSIZE,1
+SETBORDERCOLOR,8421504
+SETBORDERMODE,
+SETDATAFORMAT,%d
+SETDATACOLOR,8421504
+SETBKCOLOR,16777215
+SETBKMODE,TRANS
+SETTEXT,
+SETTEXTCOLOR,14215660
+SETTEXTMODE,NORMAL
+SETFONTNAME,ARIAL
+SETFONTSIZE,20
+SETCTLTYPE,STATIC
+SETTRUECOLOR,255
+SETFALSECOLOR,16711680
+SETDIRECTION,TOP            </FBDcomment>
+            <FBDcomment id="13" order="0" dx="33" dy="8" sx="1" sy="4" style="3">[ACTIVEX]
+CREATEACTIVEX X5SHAPE
+SETUSERID,Round Rectangle
+SETSKIN,ROUNDRECT
+ADDSYMBOL,Display_Signal[5]
+SETSYMBOLSPYDELAY,
+SETBORDERSIZE,1
+SETBORDERCOLOR,8421504
+SETBORDERMODE,
+SETDATAFORMAT,%d
+SETDATACOLOR,8421504
+SETBKCOLOR,16777215
+SETBKMODE,TRANS
+SETTEXT,
+SETTEXTCOLOR,14215660
+SETTEXTMODE,NORMAL
+SETFONTNAME,ARIAL
+SETFONTSIZE,20
+SETCTLTYPE,STATIC
+SETTRUECOLOR,255
+SETFALSECOLOR,16711680
+SETDIRECTION,TOP            </FBDcomment>
+            <FBDcomment id="14" order="0" dx="38" dy="8" sx="1" sy="4" style="3">[ACTIVEX]
+CREATEACTIVEX X5SHAPE
+SETUSERID,Round Rectangle
+SETSKIN,ROUNDRECT
+ADDSYMBOL,Display_Signal[1]
+SETSYMBOLSPYDELAY,
+SETBORDERSIZE,1
+SETBORDERCOLOR,8421504
+SETBORDERMODE,
+SETDATAFORMAT,%d
+SETDATACOLOR,8421504
+SETBKCOLOR,16777215
+SETBKMODE,TRANS
+SETTEXT,
+SETTEXTCOLOR,14215660
+SETTEXTMODE,NORMAL
+SETFONTNAME,ARIAL
+SETFONTSIZE,20
+SETCTLTYPE,STATIC
+SETTRUECOLOR,255
+SETFALSECOLOR,16711680
+SETDIRECTION,TOP            </FBDcomment>
+            <FBDcomment id="12" order="0" dx="2" dy="9" sx="5" sy="2" style="3">[ACTIVEX]
+CREATEACTIVEX X5BUTTON
+SETUSERID,Push button
+SETSKIN,DEFAULT
+ADDSYMBOL,MyRecipe_Array/MUTE
+SETSYMBOLSPYDELAY,
+SETBORDERSIZE,2
+SETBORDERCOLOR,8421504
+SETBORDERMODE,3DUP
+SETDATAFORMAT,
+SETDATACOLOR,8421504
+SETBKCOLOR,12632256
+SETBKMODE,OPAQUE
+SETTEXT,MUTE
+SETTEXTCOLOR,0
+SETTEXTMODE,BOLD
+SETFONTNAME,ARIAL
+SETFONTSIZE,30
+SETCTLTYPE,PUSHBUTTON
+SETONBITMAP,
+SETOFFBITMAP,
+SETBITMAPMODE,ORIGINAL            </FBDcomment>
+            <FBDcomment id="20" order="0" dx="34" dy="12" sx="4" sy="1" style="3">[ACTIVEX]
+CREATEACTIVEX X5SHAPE
+SETUSERID,Round Rectangle
+SETSKIN,ROUNDRECT
+ADDSYMBOL,Display_Signal[6]
+SETSYMBOLSPYDELAY,
+SETBORDERSIZE,1
+SETBORDERCOLOR,8421504
+SETBORDERMODE,
+SETDATAFORMAT,%d
+SETDATACOLOR,8421504
+SETBKCOLOR,16777215
+SETBKMODE,TRANS
+SETTEXT,
+SETTEXTCOLOR,14215660
+SETTEXTMODE,NORMAL
+SETFONTNAME,ARIAL
+SETFONTSIZE,20
+SETCTLTYPE,STATIC
+SETTRUECOLOR,255
+SETFALSECOLOR,16711680
+SETDIRECTION,TOP            </FBDcomment>
+            <FBDcomment id="15" order="0" dx="33" dy="13" sx="1" sy="4" style="3">[ACTIVEX]
+CREATEACTIVEX X5SHAPE
+SETUSERID,Round Rectangle
+SETSKIN,ROUNDRECT
+ADDSYMBOL,Display_Signal[4]
+SETSYMBOLSPYDELAY,
+SETBORDERSIZE,1
+SETBORDERCOLOR,8421504
+SETBORDERMODE,
+SETDATAFORMAT,%d
+SETDATACOLOR,8421504
+SETBKCOLOR,16777215
+SETBKMODE,TRANS
+SETTEXT,
+SETTEXTCOLOR,14215660
+SETTEXTMODE,NORMAL
+SETFONTNAME,ARIAL
+SETFONTSIZE,20
+SETCTLTYPE,STATIC
+SETTRUECOLOR,255
+SETFALSECOLOR,16711680
+SETDIRECTION,TOP            </FBDcomment>
+            <FBDcomment id="16" order="0" dx="38" dy="13" sx="1" sy="4" style="3">[ACTIVEX]
+CREATEACTIVEX X5SHAPE
+SETUSERID,Round Rectangle
+SETSKIN,ROUNDRECT
+ADDSYMBOL,Display_Signal[2]
+SETSYMBOLSPYDELAY,
+SETBORDERSIZE,1
+SETBORDERCOLOR,8421504
+SETBORDERMODE,
+SETDATAFORMAT,%d
+SETDATACOLOR,8421504
+SETBKCOLOR,16777215
+SETBKMODE,TRANS
+SETTEXT,
+SETTEXTCOLOR,14215660
+SETTEXTMODE,NORMAL
+SETFONTNAME,ARIAL
+SETFONTSIZE,20
+SETCTLTYPE,STATIC
+SETTRUECOLOR,255
+SETFALSECOLOR,16711680
+SETDIRECTION,TOP            </FBDcomment>
+            <FBDcomment id="22" order="0" dx="34" dy="17" sx="4" sy="1" style="3">[ACTIVEX]
+CREATEACTIVEX X5SHAPE
+SETUSERID,Round Rectangle
+SETSKIN,ROUNDRECT
+ADDSYMBOL,Display_Signal[3]
+SETSYMBOLSPYDELAY,
+SETBORDERSIZE,1
+SETBORDERCOLOR,8421504
+SETBORDERMODE,
+SETDATAFORMAT,%d
+SETDATACOLOR,8421504
+SETBKCOLOR,16777215
+SETBKMODE,TRANS
+SETTEXT,
+SETTEXTCOLOR,14215660
+SETTEXTMODE,NORMAL
+SETFONTNAME,ARIAL
+SETFONTSIZE,20
+SETCTLTYPE,STATIC
+SETTRUECOLOR,255
+SETFALSECOLOR,16711680
+SETDIRECTION,TOP            </FBDcomment>
+            <FBDline negate="0" idfrom="1" idto="4" pinfrom="0" pinto="0" cutx="50" cuty="50">
+               <FBDlinepoint xcell="15" ycell="2" xincell="0" yincell="8"/>
+               <FBDlinepoint xcell="15" ycell="2" xincell="7" yincell="8"/>
+               <FBDlinepoint xcell="15" ycell="2" xincell="7" yincell="8"/>
+               <FBDlinepoint xcell="16" ycell="2" xincell="1" yincell="8"/>
+            </FBDline>
+            <FBDline negate="0" idfrom="2" idto="1" pinfrom="0" pinto="0" cutx="50" cuty="50">
+               <FBDlinepoint xcell="10" ycell="2" xincell="0" yincell="8"/>
+               <FBDlinepoint xcell="10" ycell="2" xincell="7" yincell="8"/>
+               <FBDlinepoint xcell="10" ycell="2" xincell="7" yincell="8"/>
+               <FBDlinepoint xcell="11" ycell="2" xincell="1" yincell="8"/>
+            </FBDline>
+            <FBDline negate="0" idfrom="3" idto="1" pinfrom="0" pinto="1" cutx="50" cuty="50">
+               <FBDlinepoint xcell="10" ycell="3" xincell="0" yincell="8"/>
+               <FBDlinepoint xcell="10" ycell="3" xincell="7" yincell="8"/>
+               <FBDlinepoint xcell="10" ycell="3" xincell="7" yincell="8"/>
+               <FBDlinepoint xcell="11" ycell="3" xincell="1" yincell="8"/>
+            </FBDline>
+            <FBDline negate="0" idfrom="5" idto="9" pinfrom="0" pinto="0" cutx="50" cuty="50">
+               <FBDlinepoint xcell="15" ycell="7" xincell="0" yincell="8"/>
+               <FBDlinepoint xcell="15" ycell="7" xincell="7" yincell="8"/>
+               <FBDlinepoint xcell="15" ycell="7" xincell="7" yincell="8"/>
+               <FBDlinepoint xcell="16" ycell="7" xincell="1" yincell="8"/>
+            </FBDline>
+            <FBDline negate="0" idfrom="10" idto="5" pinfrom="0" pinto="0" cutx="50" cuty="50">
+               <FBDlinepoint xcell="7" ycell="5" xincell="0" yincell="8"/>
+               <FBDlinepoint xcell="8" ycell="5" xincell="12" yincell="8"/>
+               <FBDlinepoint xcell="8" ycell="7" xincell="12" yincell="8"/>
+               <FBDlinepoint xcell="11" ycell="7" xincell="1" yincell="8"/>
+            </FBDline>
+            <FBDline negate="0" idfrom="11" idto="5" pinfrom="0" pinto="1" cutx="50" cuty="50">
+               <FBDlinepoint xcell="7" ycell="7" xincell="0" yincell="8"/>
+               <FBDlinepoint xcell="8" ycell="7" xincell="13" yincell="8"/>
+               <FBDlinepoint xcell="8" ycell="8" xincell="13" yincell="8"/>
+               <FBDlinepoint xcell="11" ycell="8" xincell="1" yincell="8"/>
+            </FBDline>
+            <FBDline negate="0" idfrom="12" idto="5" pinfrom="0" pinto="2" cutx="50" cuty="50">
+               <FBDlinepoint xcell="7" ycell="9" xincell="0" yincell="8"/>
+               <FBDlinepoint xcell="8" ycell="9" xincell="13" yincell="8"/>
+               <FBDlinepoint xcell="8" ycell="9" xincell="13" yincell="8"/>
+               <FBDlinepoint xcell="11" ycell="9" xincell="1" yincell="8"/>
+            </FBDline>
+         </sourceFBD>
+      </pou>
+   </programs>
+</K5project>

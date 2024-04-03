@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<K5project version="1.1">
+   <graphics>
+      <graphic name="EX4_Light" backcolor="16777215">
+         <graitem dx="160" dy="80" sx="80" sy="88" kind="X5BUTTON">
+            <graprop name="SETUSERID" value="Lamp"/>
+            <graprop name="SETSKIN" value="CUSTOM"/>
+            <graprop name="ADDSYMBOL" value="EX3_LD/light"/>
+            <graprop name="SETSYMBOLSPYDELAY" value=""/>
+            <graprop name="SETBORDERSIZE" value="0"/>
+            <graprop name="SETBORDERCOLOR" value="8421504"/>
+            <graprop name="SETBORDERMODE" value=""/>
+            <graprop name="SETDATAFORMAT" value=""/>
+            <graprop name="SETDATACOLOR" value="8421504"/>
+            <graprop name="SETBKCOLOR" value="12632256"/>
+            <graprop name="SETBKMODE" value="TRANS"/>
+            <graprop name="SETTEXT" value=""/>
+            <graprop name="SETTEXTCOLOR" value="14215660"/>
+            <graprop name="SETTEXTMODE" value="NORMAL"/>
+            <graprop name="SETFONTNAME" value="ARIAL"/>
+            <graprop name="SETFONTSIZE" value="50"/>
+            <graprop name="SETCTLTYPE" value="STATIC"/>
+            <graprop name="SETONBITMAP" value="LIGHT_ON-40x40.BMP"/>
+            <graprop name="SETOFFBITMAP" value="LIGHT_OFF-40x40.BMP"/>
+            <graprop name="SETBITMAPMODE" value="STRETCH"/>
+         </graitem>
+         <graitem dx="160" dy="176" sx="80" sy="80" kind="X5BUTTON">
+            <graprop name="SETUSERID" value="BT_ONOFF5"/>
+            <graprop name="SETSKIN" value="CUSTOM"/>
+            <graprop name="ADDSYMBOL" value="EX3_LD/Button"/>
+            <graprop name="SETSYMBOLSPYDELAY" value="0"/>
+            <graprop name="SETBORDERSIZE" value="0"/>
+            <graprop name="SETBORDERCOLOR" value="8421504"/>
+            <graprop name="SETBORDERMODE" value="3DUP"/>
+            <graprop name="SETDATAFORMAT" value=""/>
+            <graprop name="SETDATACOLOR" value="8421504"/>
+            <graprop name="SETBKCOLOR" value="12632256"/>
+            <graprop name="SETBKMODE" value="TRANS"/>
+            <graprop name="SETTEXT" value=""/>
+            <graprop name="SETTEXTCOLOR" value="0"/>
+            <graprop name="SETTEXTMODE" value="BOLD"/>
+            <graprop name="SETFONTNAME" value="ARIAL"/>
+            <graprop name="SETFONTSIZE" value="30"/>
+            <graprop name="SETCTLTYPE" value="SWITCH"/>
+            <graprop name="SETONBITMAP" value="BT_ON bascule 64x64 px.png"/>
+            <graprop name="SETOFFBITMAP" value="BT_OFF bascule 64x64 px.png"/>
+            <graprop name="SETBITMAPMODE" value="STRETCH"/>
+         </graitem>
+         <gragdi name="BACKCOLOR" value="16777215"/>
+         <gragdi name="USEMARGIN" value="1"/>
+         <gragdi name="MARGWIDTH" value="16"/>
+         <gragdi name="MARGHEIGHT" value="16"/>
+         <gragdi name="SNAPGRID" value="1"/>
+         <gragdi name="MAXWIDTH" value="-1"/>
+         <gragdi name="MAXHEIGHT" value="-1"/>
+      </graphic>
+   </graphics>
+</K5project>
