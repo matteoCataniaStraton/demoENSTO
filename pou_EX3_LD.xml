@@ -6,6 +6,7 @@
             <var name="Button" type="BOOL"/>
             <var name="light" type="BOOL"/>
             <var name="Breaker" type="BOOL"/>
+            <var name="lightmodif" type="BOOL"/>
          </vargroup>
 <defines name="EX3_LD"></defines>
          <sourceLD>
